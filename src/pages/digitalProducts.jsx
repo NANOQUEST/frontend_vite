@@ -4,6 +4,7 @@ import virtualLearning from "../assets/virtual-and-augment-skill-learning.jpg";
 import gamifiedLearning from "../assets/gamified-learning.jpg";
 import intelligentTutor from "../assets/intelligent-tutor-system.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const products = [
     {
@@ -48,7 +49,7 @@ const DigitalProducts = () => {
                 {products.map((product, index) => (
                     <motion.div
                         key={index}
-                        className="max-w-sm overflow-hidden rounded-lg bg-white shadow-md"
+                        className="flex max-w-sm cursor-pointer flex-col overflow-hidden rounded-lg bg-white shadow-md"
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
@@ -64,13 +65,18 @@ const DigitalProducts = () => {
                             alt={product.title}
                             className="w-full object-cover object-center"
                         />
-                        <div className="p-3">
+                        <div className="flex grow flex-col p-3">
                             <h2 className="mb-3 text-xl font-semibold text-blue-600">
                                 {product.title}
                             </h2>
-                            <p className="text-base text-gray-600">
+                            <p className="grow text-base text-gray-600">
                                 {product.description}
                             </p>
+                            <Link to="/products/membership">
+                                <button className="mt-3 w-full rounded-md bg-blue-600 px-4 py-2 text-white">
+                                    Buy Now
+                                </button>
+                            </Link>
                         </div>
                     </motion.div>
                 ))}

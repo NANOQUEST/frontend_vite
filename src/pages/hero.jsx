@@ -51,7 +51,7 @@ const Hero = () => {
     return (
         <div className="relative overflow-hidden px-4 md:px-8 lg:px-16">
             <div className="my-14 flex flex-col sm:mt-28 sm:flex-row sm:items-center sm:justify-around">
-                <div className="self-center sm:order-1">
+                {/* <div className="self-center sm:order-1">
                     <motion.img
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -67,7 +67,7 @@ const Hero = () => {
                         className="w-full max-w-lg"
                         loading="lazy"
                     />
-                </div>
+                </div> */}
 
                 <div className="mt-3 sm:mt-0 sm:w-2/3 sm:max-w-screen-md">
                     <motion.h1
