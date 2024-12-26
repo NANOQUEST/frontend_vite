@@ -2,8 +2,8 @@ import axios from "axios";
 import { getToken, removeToken } from "./utils/tokenService";
 
 const api = axios.create({
-    baseURL: "https://backend-nanoquest.onrender.com",
-    // baseURL: "http://localhost:5000",
+    // baseURL: "https://backend-nanoquest.onrender.com",
+    baseURL: "http://localhost:5000",
     withCredentials: true,
 });
 

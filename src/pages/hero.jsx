@@ -28,7 +28,7 @@ const Hero = () => {
 
     const handleUpgradeSkills = () => {
         if (userLoggedIn) {
-            navigate("/courses");
+            navigate("/products/skills");
         } else {
             setLoginPopupVisibility(true);
         }
@@ -102,22 +102,55 @@ const Hero = () => {
                         knowledge and expertise. Learn at your own pace with our
                         E-learning platform.
                     </motion.p>
-                    <motion.button
-                        initial={{ x: 100, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0.4,
-                            x: { type: "string", stiffness: 60 },
-                            opacity: { duration: 0.6 },
-                            ease: "easeIn",
-                            duration: 1,
-                        }}
-                        className="glow-on-hover mt-4 rounded-lg bg-blue-900 px-6 py-2 text-sm text-white"
-                        type="button"
-                        onClick={handleUpgradeSkills}
-                    >
-                        Upgrade Your Skills
-                    </motion.button>
+                    <div className="flex items-center gap-4">
+                        <motion.button
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{
+                                delay: 0.4,
+                                x: { type: "string", stiffness: 60 },
+                                opacity: { duration: 0.6 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="glow-on-hover mt-4 rounded-lg bg-blue-900 px-6 py-2 text-sm text-white"
+                            type="button"
+                            onClick={handleUpgradeSkills}
+                        >
+                            Upgrade Your Skills
+                        </motion.button>
+
+                        <motion.button
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{
+                                delay: 0.4,
+                                x: { type: "string", stiffness: 60 },
+                                opacity: { duration: 0.6 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="glow-on-hover mt-4 rounded-lg bg-blue-900 px-6 py-2 text-sm text-white"
+                            type="button"
+                        >
+                            Corporate/Universities/Colleges/Schools
+                        </motion.button>
+                        <motion.button
+                            initial={{ x: 100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{
+                                delay: 0.4,
+                                x: { type: "string", stiffness: 60 },
+                                opacity: { duration: 0.6 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="glow-on-hover mt-4 rounded-lg bg-blue-900 px-6 py-2 text-sm text-white"
+                            type="button"
+                        >
+                            Partner with us
+                        </motion.button>
+                    </div>
                 </div>
             </div>
 
