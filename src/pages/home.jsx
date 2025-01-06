@@ -5,6 +5,7 @@ import LoginPopup from "../components/loginPopUp";
 import { useAuth } from "../contexts/authContext";
 import { getToken } from "../utils/tokenService";
 import { FaWhatsapp } from "react-icons/fa";
+import SocialMediaFeeds from "../components/socialMediaFeeds";
 
 const Home = () => {
     const { showLoginPopUp, handleLogout, setLoginPopupVisibility } = useAuth();
@@ -51,7 +52,7 @@ const Home = () => {
                     </div>
                 </div>
             )}
-
+            <SocialMediaFeeds />
             {/* <button
                 className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
                 title="Chat with us on WhatsApp"
